@@ -1,0 +1,57 @@
+<div class="wrap">
+  <div class="card">
+    <header>
+      <div>
+        <h1>🎉 Geburtstags-Vibe-Quiz → Rubbeln zum Enthüllen</h1>
+        <div class="sub">Beantworte 3 flotte Fragen und rubbel dann deine Überraschung frei.</div>
+      </div>
+      <span class="pill" id="stepPill">Schritt 1/2</span>
+    </header>
+
+    <div class="bar"><i id="bar"></i></div>
+
+    <!-- QUIZ -->
+    <section id="quiz"></section>
+
+    <div class="row" id="navQuiz">
+      <button class="btn" id="backBtn" disabled>← Zurück</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span class="tiny diag" id="diagBtn" title="Selbsttest">Diagnose</span>
+        <button class="btn primary" id="nextBtn">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- ERGEBNIS + RUBBELN -->
+    <section id="result" class="result">
+      <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;margin:6px 2px">
+        <span class="pill" id="bestPill">Best Match</span>
+        <span class="tiny" id="scoreTiny"></span>
+      </div>
+
+      <div class="gridN" id="choices"></div>
+
+      <div class="scratchWrap" style="margin-top:12px">
+        <div class="scratchUnder" id="under">
+          <h2 id="revealTitle">🎁 Deine Überraschung</h2>
+          <div class="tiny" id="revealSub">Rubble die silberne Fläche frei …</div>
+          <div class="tiny" id="revealInfo" style="margin-top:6px"></div>
+          <div class="secret">
+            <button class="btn primary" id="openBtn">Details öffnen</button>
+            <button class="btn" id="printBtn">🖨️ Gutschein drucken</button>
+          </div>
+        </div>
+        <canvas class="scratchCanvas" id="scratch"></canvas>
+      </div>
+
+      <p class="tiny" style="margin-top:8px;text-align:center">
+        Du kannst oben auch eine andere Option wählen – ganz wie du willst 💖
+      </p>
+    </section>
+  </div>
+
+  <p class="tiny" style="text-align:center;margin-top:8px">
+    Einzeldatei, Handy-freundlich. Mit Liebe gebaut.
+  </p>
+</div>
+
+<canvas id="confetti"></canvas>
